@@ -7,5 +7,56 @@ You will find snippets of code from projects that i have done and been involved 
   
   
 # A Jasmine test driven JS Class -  
-In this Archive (Zip) file, is a JS class that i have made using TDD (Test Driven Development) using Jasmine as the tester.
-Archive file - 
+In the Archive (Zip) file **Jasmine Test**, is a JS class that i have made using TDD (Test Driven Development) using Jasmine as the tester.  
+Inside the folder you will see 1 HTML file, and three folders named:
+ 1. lib, 
+ 1. spec,
+ 1. src
+ 
+Inside the lib folder is the Jasmine tester, this folder doesnt require you to change anything inside it,  
+Inside the spec folder is where you would put the the files that you would use to test what you are developing.
+Inside the src folder is where you would put your source code, the code that you are testing.  
+  
+# carousel.js -  
+This carousel is particularly special as it is renuable. This file reads image file paths from a JSON file and grabs those images
+for display. The images change on an interval of 4000 which is equivalent to 4 seconds.  
+
+**Please note: that this carousel is written in AngularJS V 1.4.8**  
+
+If you wanted to change what it displays all you have to do is put the images you want to display in a directory (file path)
+and then change these lines:  
+
+```javascript
+		// sets jsonFile for voyager
+		if ($scope.currPage == "voyager") {
+			jsonFile = "js/json/galleries/V.json";
+			$scope.currImage = "images/galleries/V/V1.jpg";
+		}
+		// sets jsonFile for change minds
+		else if ($scope.currPage == "changeMinds") {
+			jsonFile = "js/json/galleries/CM.json";
+			$scope.currImage = "images/galleries/CM/CM1.jpg";
+		}
+		// sets jsonFile for Human Henge
+		else if ($scope.currPage == "humanHenge") {
+			jsonFile = "js/json/galleries/HH.json";
+			$scope.currImage = "images/galleries/HH/HH1.jpg";
+		}
+		// sets jsonFile for Burgh Castle
+		else if ($scope.currPage == "burghCastle") {
+			jsonFile = "js/json/galleries/BC.json";
+			$scope.currImage = "images/galleries/BC/BCA1.jpg";
+		}
+```  
+On the project i was working on for which i developed this, we used this carousel on multiple pages so you dont need all of those **else if's** so you can easily shorten it down to:  
+
+```javascript
+		// sets jsonFile for voyager
+		if ($scope.currPage == "voyager") {
+			jsonFile = "js/json/galleries/V.json";
+			$scope.currImage = "images/galleries/V/V1.jpg";
+		}
+```  
+Make a scope variable called **$scope.currPage = "YOUR VARIABLE NAME HERE"** on the top of your js file, then in the if **$scope.currPage == "YOUR VARIABLE NAME"**, then where it says **jsonFile = "js/json/galleries/V.json"** change the **js/json/galleries/V.json** part to the directory of the json file you made (an example of the json layout will be below).  
+
+Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where i put that scope variable change the **images/galleries/V/V1.jpg** to the path to your images that you want to display and put the image that is at the top.
