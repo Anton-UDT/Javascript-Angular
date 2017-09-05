@@ -59,4 +59,17 @@ On the project i was working on for which i developed this, we used this carouse
 ```  
 Make a scope variable called **$scope.currPage = "YOUR VARIABLE NAME HERE"** on the top of your js file, then in the if **$scope.currPage == "YOUR VARIABLE NAME"**, then where it says **jsonFile = "js/json/galleries/V.json"** change the **js/json/galleries/V.json** part to the directory of the json file you made (an example of the json layout will be below).  
 
-Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where i put that scope variable change the **images/galleries/V/V1.jpg** to the path to your images that you want to display and put the image that is at the top.
+Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where i put that scope variable change the **images/galleries/V/V1.jpg** to the path to your images that you want to display and put the image that is at the top.  
+
+# galleryClass.js -  
+This is a class that goes along with the carousel.js, this is used along side it to get the current image and checks how many images there are. This does this using the json file with the image paths.  
+Then, using this, it can advanced onto the next image and when it reaches the last image it will then go back to the first image in the list.  
+  
+# statisticsRoller.js -  
+
+
+
+
+
+
+
