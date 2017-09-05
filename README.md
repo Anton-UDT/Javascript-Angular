@@ -3,11 +3,11 @@ Welcome reader.
 This is a repo of all the things that I have done that is to do with JavaScript and the framework Angular JS.  
   
 # What am i likely to find here?
-You will find snippets of code from projects that i have done and been involved with.  
+You will find snippets of code from projects that I have done and been involved with.  
   
   
 # A Jasmine test driven JS Class -  
-In the Archive (Zip) file **Jasmine Test**, is a JS class that i have made using TDD (Test Driven Development) using Jasmine as the tester.  
+In the Archive (Zip) file **Jasmine Test**, is a JS class that I have made using TDD (Test Driven Development) using Jasmine as the tester.  
 Inside the folder you will see 1 HTML file, and three folders named:
  1. lib, 
  1. spec,
@@ -48,7 +48,7 @@ and then change these lines:
 			$scope.currImage = "images/galleries/BC/BCA1.jpg";
 		}
 ```  
-On the project i was working on for which i developed this, we used this carousel on multiple pages so you dont need all of those **else if's** so you can easily shorten it down to:  
+On the project I was working on in which this was developed, we used this carousel on multiple pages so you dont need all of those **else if's** so you can easily shorten it down to:  
 
 ```javascript
 		// sets jsonFile for voyager
@@ -59,7 +59,7 @@ On the project i was working on for which i developed this, we used this carouse
 ```  
 Make a scope variable called **$scope.currPage = "YOUR VARIABLE NAME HERE"** on the top of your js file, then in the if **$scope.currPage == "YOUR VARIABLE NAME"**, then where it says **jsonFile = "js/json/galleries/V.json"** change the **js/json/galleries/V.json** part to the directory of the json file you made (an example of the json layout will be below).  
 
-Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where i put that scope variable change the **images/galleries/V/V1.jpg** to the path to your images that you want to display and put the image that is at the top.  
+Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where I put that scope variable change the **images/galleries/V/V1.jpg** to the path to your path of the images that you want to display and put the image that is at the top.  
 
 # galleryClass.js -  
 This is a class that goes along with the carousel.js, this is used along side it to get the current image and checks how many images there are. This does this using the json file with the image paths.  
@@ -76,8 +76,3 @@ This file activates functions on the press of a button, where it activates an an
 # Flyer.js -  
 This is used in collaberation with another file called **flyingLogos.js**.  
 This file gets the positioning of the files and sets it so it is off the screen, and then it will slide onto the screen and then set onto its final position.
-
-
-
-
-
