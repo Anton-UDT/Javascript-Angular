@@ -66,8 +66,16 @@ This is a class that goes along with the carousel.js, this is used along side it
 Then, using this, it can advanced onto the next image and when it reaches the last image it will then go back to the first image in the list.  
   
 # statisticsRoller.js -  
+Statistics Roller is the almost the same as the carousel but instead of images its for text, but it also still uses a json file to grab the data to display.  
 
+# flyingLogos.js -  
+On a project that I was involved in we had logos which were displayed their conent, but instead of just having them static (still), we wanted them to be dynamic (changeing), so we decided to have the logos fly onto the screen from different directions (top, bottom, left and right sides of the screen).  
 
+This file activates functions on the press of a button, where it activates an angular interval in which gets the positioning from the  Flyer.js file.
+
+# Flyer.js -  
+This is used in collaberation with another file called **flyingLogos.js**.  
+This file gets the positioning of the files and sets it so it is off the screen, and then it will slide onto the screen and then set onto its final position.
 
 
 
