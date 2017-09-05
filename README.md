@@ -4,3 +4,8 @@ This is a repo of all the things that I have done that is to do with JavaScript 
   
 # What am i likely to find here?
 You will find snippets of code from projects that i have done and been involved with.  
+  
+  
+# A Jasmine test driven JS Class -  
+In this Archive (Zip) file, is a JS class that i have made using TDD (Test Driven Development) using Jasmine as the tester.
+Archive file - 
