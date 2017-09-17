@@ -27,39 +27,39 @@ If you wanted to change what it displays all you have to do is put the images yo
 and then change these lines:  
 
 ```javascript
-		// sets jsonFile for voyager
-		if ($scope.currPage == "voyager") {
-			jsonFile = "js/json/galleries/V.json";
-			$scope.currImage = "images/galleries/V/V1.jpg";
+		// sets jsonFile for cats
+		if ($scope.currPage == "catPage") {
+			jsonFile = "js/json/galleries/meow.json";
+			$scope.currImage = "images/galleries/cats/stray.jpg";
 		}
-		// sets jsonFile for change minds
-		else if ($scope.currPage == "changeMinds") {
-			jsonFile = "js/json/galleries/CM.json";
-			$scope.currImage = "images/galleries/CM/CM1.jpg";
+		// sets jsonFile for dogs
+		else if ($scope.currPage == "doggyPage") {
+			jsonFile = "js/json/galleries/woof.json";
+			$scope.currImage = "images/galleries/dogs/dogPic1.jpg";
 		}
-		// sets jsonFile for Human Henge
-		else if ($scope.currPage == "humanHenge") {
-			jsonFile = "js/json/galleries/HH.json";
-			$scope.currImage = "images/galleries/HH/HH1.jpg";
+		// sets jsonFile for birds
+		else if ($scope.currPage == "birdPage") {
+			jsonFile = "js/json/galleries/tweet.json";
+			$scope.currImage = "images/galleries/birds/blueBird1.jpg";
 		}
-		// sets jsonFile for Burgh Castle
-		else if ($scope.currPage == "burghCastle") {
-			jsonFile = "js/json/galleries/BC.json";
-			$scope.currImage = "images/galleries/BC/BCA1.jpg";
+		// sets jsonFile for chickens
+		else if ($scope.currPage == "chickenPage") {
+			jsonFile = "js/json/galleries/cluck.json";
+			$scope.currImage = "images/galleries/chkn/babyChkn.jpg";
 		}
 ```  
-On the project I was working on in which this was developed, we used this carousel on multiple pages so you dont need all of those **else if's** so you can easily shorten it down to:  
+I have used multiple scopes as you can use this for multiple pages, but if you want to use it for just one you dont need all of those **else if's** so you can easily shorten it down to:  
 
 ```javascript
 		// sets jsonFile for voyager
 		if ($scope.currPage == "voyager") {
-			jsonFile = "js/json/galleries/V.json";
-			$scope.currImage = "images/galleries/V/V1.jpg";
+			jsonFile = "js/json/galleries/meow.json";
+			$scope.currImage = "images/galleries/cats/stray1.jpg";
 		}
 ```  
-Make a scope variable called **$scope.currPage = "YOUR VARIABLE NAME HERE"** on the top of your js file, then in the if **$scope.currPage == "YOUR VARIABLE NAME"**, then where it says **jsonFile = "js/json/galleries/V.json"** change the **js/json/galleries/V.json** part to the directory of the json file you made (an example of the json layout will be below).  
+Make a scope variable called **$scope.currPage = "YOUR VARIABLE NAME HERE"** on the top of your js file, then in the if **$scope.currPage == "YOUR VARIABLE NAME"**, then where it says **jsonFile = "js/json/galleries/meow.json"** change the **js/json/galleries/meow.json** part to the directory of the json file you made (an example of the json layout will be below).  
 
-Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where I put that scope variable change the **images/galleries/V/V1.jpg** to the path to your path of the images that you want to display and put the image that is at the top.  
+Then also make another scope variable called **$scope.currImage = ""** then inside the if statement where I put that scope variable change the **images/galleries/cats/stray1.jpg** to the path to your path of the images that you want to display and put the image that is at the top.  
 
 # galleryClass.js -  
 This is a class that goes along with the carousel.js, this is used along side it to get the current image and checks how many images there are. This does this using the json file with the image paths.  
