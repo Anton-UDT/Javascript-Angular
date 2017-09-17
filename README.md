@@ -51,8 +51,8 @@ and then change these lines:
 I have used multiple scopes as you can use this for multiple pages, but if you want to use it for just one you dont need all of those **else if's** so you can easily shorten it down to:  
 
 ```javascript
-		// sets jsonFile for voyager
-		if ($scope.currPage == "voyager") {
+		// sets jsonFile for cats
+		if ($scope.currPage == "catPage") {
 			jsonFile = "js/json/galleries/meow.json";
 			$scope.currImage = "images/galleries/cats/stray1.jpg";
 		}
