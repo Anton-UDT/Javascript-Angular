@@ -1,25 +1,25 @@
 // open gallery
 	function openGallery(jsonFile) {
 		$scope.galleryOpen = true;
-		// sets jsonFile for voyager
-		if ($scope.currPage == "voyager") {
-			jsonFile = "js/json/galleries/V.json";
-			$scope.currImage = "images/galleries/V/V1.jpg";
+		// sets jsonFile for cats
+		if ($scope.currPage == "catPage") {
+			jsonFile = "js/json/galleries/meow.json";
+			$scope.currImage = "images/galleries/cats/stray.jpg";
 		}
-		// sets jsonFile for change minds
-		else if ($scope.currPage == "changeMinds") {
-			jsonFile = "js/json/galleries/CM.json";
-			$scope.currImage = "images/galleries/CM/CM1.jpg";
+		// sets jsonFile for dogs
+		else if ($scope.currPage == "doggyPage") {
+			jsonFile = "js/json/galleries/woof.json";
+			$scope.currImage = "images/galleries/dogs/dogPic1.jpg";
 		}
-		// sets jsonFile for Human Henge
-		else if ($scope.currPage == "humanHenge") {
-			jsonFile = "js/json/galleries/HH.json";
-			$scope.currImage = "images/galleries/HH/HH1.jpg";
+		// sets jsonFile for birds
+		else if ($scope.currPage == "birdPage") {
+			jsonFile = "js/json/galleries/tweet.json";
+			$scope.currImage = "images/galleries/birds/blueBird1.jpg";
 		}
-		// sets jsonFile for Burgh Castle
-		else if ($scope.currPage == "burghCastle") {
-			jsonFile = "js/json/galleries/BC.json";
-			$scope.currImage = "images/galleries/BC/BCA1.jpg";
+		// sets jsonFile for chickens
+		else if ($scope.currPage == "chickenPage") {
+			jsonFile = "js/json/galleries/cluck.json";
+			$scope.currImage = "images/galleries/chkn/babyChkn.jpg";
 		}
 		setTimeout(getNewGallery(jsonFile), 5000);
 		// current image
