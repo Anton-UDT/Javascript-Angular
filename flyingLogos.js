@@ -1,27 +1,26 @@
-//Flying logos - Developer: Anthony Funai.
 function flyLogos(doFly){
-	var rtLogo = new Flyer('RT-logo', 'left');
-	var cmLogo = new Flyer('CM-logo', 'left');
-	var cqLogo = new Flyer('CQ-logo', 'top');
-	var hhLogo = new Flyer('HH-logo', 'top');
-	var vLogo = new Flyer('V-logo', 'right');
-	var gameLogo = new Flyer('Game-logo', 'right');
-	var bcLogo = new Flyer('BC-logo', 'bottom');
-	var financeLogo = new Flyer('Finance-logo', 'bottom');
+	var catLogo = new Flyer('cat-logo', 'left');
+	var dogLogo = new Flyer('dog-logo', 'left');
+	var birdLogo = new Flyer('bird-logo', 'top');
+	var chickenLogo = new Flyer('chicken-logo', 'top');
+	var whaleLogo = new Flyer('whale-logo', 'right');
+	var batsLogo = new Flyer('bats-logo', 'right');
+	var snakeLogo = new Flyer('snake-logo', 'bottom');
+	var fishLogo = new Flyer('fish-logo', 'bottom');
 	logoMoveInterval = $interval(function(){
-		var atEnd = rtLogo.inPosition() && cmLogo.inPosition();
-		atEnd = atEnd && (vLogo.inPosition() && gameLogo.inPosition());
-		atEnd = atEnd && (hhLogo.inPosition() && cqLogo.inPosition());
-		atEnd = atEnd && (bcLogo.inPosition() && financeLogo.inPosition());
+		var atEnd = catLogo.inPosition() && dogLogo.inPosition();
+		atEnd = atEnd && (whaleLogo.inPosition() && batsLogo.inPosition());
+		atEnd = atEnd && (chickenLogo.inPosition() && birdLogo.inPosition());
+		atEnd = atEnd && (snakeLogo.inPosition() && fishLogo.inPosition());
 		if(!atEnd){
-			rtLogo.moveOnce();
-			cmLogo.moveOnce();
-			cqLogo.moveOnce();
-			hhLogo.moveOnce();
-			vLogo.moveOnce();
-			gameLogo.moveOnce();
-			bcLogo.moveOnce();
-			financeLogo.moveOnce();
+			catLogo.moveOnce();
+			dogLogo.moveOnce();
+			birdLogo.moveOnce();
+			chickenLogo.moveOnce();
+			whaleLogo.moveOnce();
+			batsLogo.moveOnce();
+			snakeLogo.moveOnce();
+			fishLogo.moveOnce();
 		}
 		else{
 			$interval.cancel(logoMoveInterval);
